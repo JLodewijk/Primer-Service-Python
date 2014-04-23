@@ -5,6 +5,10 @@
 __author__="mhroelfes"
 __date__ ="$Apr 23, 2014 11:07:32 AM$"
 
+class PrimerService():
+    def __init__(self):
+        print("main program")
+
+
 if __name__ == "__main__":
-    print("Hello World")
-    print("Hello Worldd")
+    PrimerService()
