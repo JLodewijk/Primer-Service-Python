@@ -7,3 +7,4 @@ __date__ ="$Apr 23, 2014 11:07:32 AM$"
 
 if __name__ == "__main__":
     print("Hello World")
+    print("Hello Worldd")
