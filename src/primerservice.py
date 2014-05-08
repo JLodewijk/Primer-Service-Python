@@ -4,11 +4,20 @@
 
 __author__="mhroelfes"
 __date__ ="$Apr 23, 2014 11:07:32 AM$"
+import sys
+import cherrypy
 
-class PrimerService():
-    def __init__(self):
-        print("main program")
+class HelloWorld(object):
+    def index(self):
+        return "Hello World!"
+    index.exposed = True
 
+cherrypy.quickstart(HelloWorld())
 
-if __name__ == "__main__":
-    PrimerService()
+#class PrimerService():
+#    def __init__(self):
+#        print("main program")
+#        print(sys.path)
+#
+#if __name__ == "__main__":
+#    PrimerService()
