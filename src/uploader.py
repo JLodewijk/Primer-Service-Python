@@ -8,14 +8,30 @@ class FileDemo(object):
 
     def index(self):
         return """
-        <html><body>
-            <h2>Upload a file</h2>
-            <form action="upload" method="post" enctype="multipart/form-data">
-            filename: <input type="file" name="myFile" /><br />
-            <input type="submit" />
-            </form>
+        <html>
+            <head>
+                <script src="js/toggle.js"></script>
+            </head>
+            <body>
+                <script src="/homes/mhroelfes/NetBeansProjects/primerserviceweb/public_html/js/vendor/jquery.js"></script>
+                <a href="#" class="small radius button advanced">Advance options</a>
+                <div class="toggleTest">
+                    vfagfsd
+                    gfsdgf
+                    sgfsdgf
+                    sdgfsdgfs
+                    gfsdg
+                </div>
 
-        </body></html>
+                <h2>Upload a file</h2>
+                <form action="upload" class="upload" method="post" enctype="multipart/form-data">
+                filename: <input type="file" name="myFile" /><br />
+                <input type="submit" />
+                </form>
+
+            </body>
+
+        </html>
         """
     index.exposed = True
 
