@@ -8,30 +8,30 @@ from Bio import GenBank
 from Bio import SeqIO
 """
 Author: Jeroen Lodewijk <j.lodewijk@st.hanze.nl> and Marco Roelfes <marcoroelfes@gmail.com>
-Script name: fileparser
+Script name: FileParsers
 
-Fileparser is capable of parsing fasta and genebank files.
+FileParsers is capable of parsing fasta and genebank files.
 These two file types are handled both in different functions, the fasta file is handled in the ReadFastaFile.
 The genebank file in the ReadGeneBankFile.
 
-Purpose of FileParser:
+Purpose of FileParsers:
     Reading of fasta files, taking the sequence segment of every entry.
     Reading of genebank files, taking the coding regions out of the genebank file.
 
-The input of FileParser is:
+The input of FileParsers is:
     file:
         Either a genebank or fasta file containing genetic information.
 
-The output of FileParser is:
+The output of FileParsers is:
         self.sequence:
             List containing all the sequences within that particular file.
 
 """
 
-class FileParser():
-    """FileParser() -> FileParser
+class FileParsers():
+    """FileParsers) -> FileParsers
 
-	Create a new FileParser object."""
+	Create a new FileParsers object."""
     def readFastaFile(file):
         """Help on function ReadFastaFile:
 
